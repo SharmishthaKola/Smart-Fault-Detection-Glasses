@@ -19,10 +19,87 @@ To address this problem, we developed a "Smart Fault Detection Glasses" using Ra
 - Battery
 - Buzzer
 
-## Software Used:
+## High Level Architecture:
+  [Camera / OpenCV]
+        ↓
+[AI Model (Defect Detection)]
+        ↓
+[Firebase Firestore ☁️]
+        ↓
+[React Dashboard 📊]
+
 
 ## Project Structure:
 
-## Team Members:
+## 🛠️ Hardware Components (Concept + Prototype)
+
+- Raspberry Pi 4 Model B (conceptual / optional)  
+- Camera Module / Webcam  
+- Smart Glass Frame (prototype concept)  
+- Battery Pack  
+- Buzzer (for defect alert)  
+
+---
+
+## 💻 Software & Technologies Used
+
+### 🔹 Frontend
+- React.js  
+- Firebase SDK  
+- Chart.js  
+
+### 🔹 Backend / Cloud
+- Firebase Firestore (real-time database)  
+- Firebase Hosting (optional)  
+
+### 🔹 AI / Processing
+- Python  
+- OpenCV  
+- TensorFlow / CNN Model  
+
+---
+
+## 📁 Project Structure
+  project-root/
+│
+├── frontend/ (React App)
+│ ├── src/
+│ │ ├── components/
+│ │ ├── hooks/
+│ │ │ └── useInspectionData.js
+│ │ ├── firebase.js
+│ │ └── App.js
+│
+├── backend/
+│ ├── model.py
+│ ├── detect.py
+│ └── firebase_upload.py
+│
+├── dataset/
+│ ├── OK/
+│ └── NOK/
+│
+└── README.md
+
+## 👥 Team Members
+
+- Kavisha Sharma – AI Model Development  
+- Preet Desai – Backend & Data Flow  
+- Rudra Patel –   Dataset and 
+- Sharmistha Kola – Hardware + Presentation
+- Rahul – Frontend + Database + UI/UX Design 
 
 ## Future Scope:
+- Deploy on actual smart glasses hardware  
+- Add defect localization (heatmaps)  
+- Voice alerts for defective parts  
+- Predictive maintenance using historical data  
+- Edge AI optimization for Raspberry Pi  
+- Mobile app integration
+
+## 🏁 Conclusion
+
+This project demonstrates how **AI + IoT + Cloud** can transform traditional industrial inspection into an **automated, reliable, and real-time system**, reducing human error and improving efficiency.
+
+
+

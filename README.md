@@ -20,14 +20,6 @@ To address this problem, we developed a "Smart Fault Detection Glasses" using Ra
 - Buzzer
 
 ## High Level Architecture:
-  [Camera / OpenCV]
-        ↓
-[AI Model (Defect Detection)]
-        ↓
-[Firebase Firestore ☁️]
-        ↓
-[React Dashboard 📊]
-
 
 ## Project Structure:
 
@@ -60,26 +52,7 @@ To address this problem, we developed a "Smart Fault Detection Glasses" using Ra
 ---
 
 ## 📁 Project Structure
-  project-root/
-│
-├── frontend/ (React App)
-│ ├── src/
-│ │ ├── components/
-│ │ ├── hooks/
-│ │ │ └── useInspectionData.js
-│ │ ├── firebase.js
-│ │ └── App.js
-│
-├── backend/
-│ ├── model.py
-│ ├── detect.py
-│ └── firebase_upload.py
-│
-├── dataset/
-│ ├── OK/
-│ └── NOK/
-│
-└── README.md
+
 
 ## 👥 Team Members
 
